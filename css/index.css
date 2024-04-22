@@ -3,6 +3,10 @@ html,body,ul,li{
     margin: 0;
     padding: 0;
 }
+a{
+    text-decoration: none;
+    color: #000000;
+}
 /* 头部 */
 .header-box{
     width: 100%;
@@ -30,7 +34,7 @@ html,body,ul,li{
   font-size: 16px;
   justify-content: space-around;
 }
-.header-bx ul li:hover{
+.header-bx ul li,a:hover{
     color: blue;
     cursor: pointer;
 }
@@ -229,10 +233,107 @@ html,body,ul,li{
 /* 管理架构 */
 .Management-Architecture-box{
     width: 100%;
-    height: 400px;
+    height: 500px;
+    margin-top: 20px;
 }
 .Management-Architecture-bx{
     width: 70%;
     height: 100%;
     margin: 0px auto;
+    /* background-color: #666666; */
+}
+.Management-Architecture-top{
+    text-align: center;
+    font-size: 30px;
+}
+/* 联系我们 */
+.contact-us-box{
+    width: 100%;
+    height: 1000px;
+    /* background-color: #354376; */
+}
+.contact-us-bx{
+    width: 70%;
+    height: 600px;
+    margin: 0px auto;
+}
+.contact-us-top{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.contact-us{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    font-size: 16px;
+    margin-bottom: 80px;
+
+}
+.contact-us1{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* justify-content: center; */
+    /* text-align: center; */
+    border: 1px solid blue;
+
+}
+.contact-us-biaodan{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-us-biaodan input{
+    border: 0;
+    width: 30%;
+    height: 30px;
+    border-bottom: 1px solid #666666;
+}
+.contact-us-text{
+    margin-top: 50px;
+}
+.contact-us-text textarea{
+    width: 100%;
+    height: 200px;
+}
+input,textarea:focus {
+    outline: none;
+  }
+.contact-us-button{
+    text-align: center;
+    height: 150px;
+    line-height: 150px;
+    margin-top: 60px;
+} 
+.contact-us-button button{
+    display: block;
+    margin: auto;
+    width: 180px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    background: #354376;
+    border: none;
+}
+/* 底部 */
+.footer{
+    width: 100%;
+    height: 100px;
+    background: #333333;
+    color: white;
+    margin-top:150px ;
+}
+.footer-bx{
+    width: 70%;
+    height: 100%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }

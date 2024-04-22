@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>极昊供应链（上海）有限公司</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="bitbug_favicon.ico" />
+    <style>
+        .posbox{
+
+            width: 177px;
+            height: 270px;
+            text-align: center;
+            position: fixed;
+            bottom: 120px;
+            right: 0;
+            box-shadow: 0px 4px 6px #c4c4c4;
+            z-index: 200;
+            background-color: white;
+        }
+    </style>
 </head>
 <body>
     <!-- 头部信息 -->
@@ -17,13 +32,13 @@
                 />
             </div>
             <ul>
-                <li>首页</li>
-                <li>关于我们</li>
-                <li>网点覆盖</li>
-                <li>服务项目</li>
-                <li>新闻中心</li>
-                <li>管理架构</li>
-                <li>联系我们</li>
+                <li><a href="#shou">首页</a></li>
+                <li><a href="#guan">关于我们</a></li>
+                <li><a href="#wang">网点覆盖</a></li>
+                <li><a href="#fu">服务项目</a></li>
+                <li><a href="#xin">新闻中心</a></li>
+                <li><a href="#li">管理架构</a></li>
+                <li><a href="#lian">联系我们</a></li>
             </ul>
             <div style="font-size: 25px;
                     color: #175898;
@@ -38,15 +53,17 @@
         </div>
     </div>
     <!-- 视频部分 -->
-    <div class="video-box">
-        <video width="100%"  controls src="./images/mp4/shi.mp4"></video>
+    <div class="video-box"  id="shou">
+        <video width="100%" autoplay controls src="./images/mp4/shi.mp4"></video>
+        <div id="guan"></div>
     </div>
+    
     <!-- 关于我们 -->
-    <div class="About-Us-box">
+    <div class="About-Us-box" >
         <div class="About-Us-bx">
-            <div class="About-Us-top1">关于我们</div>
+            <div class="About-Us-top1" >关于我们</div>
             <div class="About-Us-top2">合作共赢，分享价值</div>
-            <div class="About-Us-text">
+            <div class="About-Us-text"  >
                 <p>
                     极昊供应链(上海)有限公司成立于2017年11月03日,注册地位于上海市青浦区华新镇。本公司及下属子公司主要经营物流供应链管理, 物流科技领域内的技术开
                         <br>
@@ -55,27 +72,27 @@
                     递公司提供优质的产品与高效的服务,以供应链商城与商用车后市场服务平台的集合打造了-个完整的供应链体系。
                         <br>
                     下属子公司二家:宝瑞物联网(杭州)有限公司、润翌(杭州)智能科技有限公司、优卡汇一站式商用车后市场服务小程序: -家专为快递公司提供
-                        <br>
+                        <br >
                     优质产品和服务的全系统运营及供应的生产研发型企业。目前主导产品:交叉带高速自动分拣机、...
                 </p>
             </div>
         </div>
     </div>
     <!-- 网点覆盖 -->
-    <div class="Branch-Coverage-box">
+    <div class="Branch-Coverage-box" id="wang">
         <div class="Branch-Coverage-bx">
             <div style="height: 50px;"></div>
             <div class="Branch-Coverage-title"> <h4>网点覆盖</h4></div>
             <div class="Branch-Coverage-bottom">
                 <div class="Branch-Coverage-t"><h4>合伙城市</h4></div>
-                <div class="Branch-Coverage-txt"><p>黑龙江、吉林、辽宁、北京、天津、河北、山东、陕西、山西、河南、湖北、湖南、四川、
+                <div class="Branch-Coverage-txt" id="fu"><p>黑龙江、吉林、辽宁、北京、天津、河北、山东、陕西、山西、河南、湖北、湖南、四川、
                     <br>
                     重庆、贵州、广东、上海、安徽、江苏、江西。</p></div>
             </div>
         </div>
     </div>
     <!-- 服务项目 -->
-    <div class="Service-items-box">
+    <div class="Service-items-box" >
         <div class="Service-items-bx">
             <div class="Service-items-title"><h4>服务项目</h4></div>
             <div class="Service-items">
@@ -99,7 +116,7 @@
                     <div class="Service-items1-top">车辆销售</div>
                     <div class="Service-items1-bottom">所有合伙网点既是车源的组织者,也是车辆的销售人，同时也是车辆的性价的评估发布人。建立新车销售的信用平台，建立5天二手车试驾周期，确保销售平台运营安全。</div>
                 </div>
-                <div class="Service-items1">
+                <div class="Service-items1" id="xin">
                     <div class="Service-items1-top">技术赋能</div>
                     <div class="Service-items1-bottom">公司建立一支修理保养的精英队伍，进行远程培训，远程诊断，指导修理。推动行业标准建设，做行业标准的倡导人和制定人。</div>
                 </div>
@@ -107,7 +124,7 @@
         </div>
     </div>
     <!-- 新闻中心 -->
-    <div class="News-Center-box">
+    <div class="News-Center-box" >
         <div class="News-Center-bx">
             <div style="height: 30px;"></div>
             <div class="News-Center-title"><h4>新闻中心</h4></div>
@@ -129,17 +146,71 @@
                 </div>
                 <div class="News-Center1">
                     <img src="./images/新闻_03.jpg" alt="">
-                    <div class="a">【行业新闻】卡友们别慌！国五还能买 听我给你分析!</div>
+                    <div class="a" id="li">【行业新闻】卡友们别慌！国五还能买 听我给你分析!</div>
                     <div class="b">自从7月1日国六开始实施后，不少卡友对于当前买国五还是买国六很纠结。虽然当下排放升级是大趋势，但国五也不是不能买了。下面，我们就来简
                     </div>
-                    <div class="c">2021.12.31 </div>
+                    <div class="c" >2021.12.31 </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- 管理架构 -->
-    <div class="Management-Architecture-box">
-        <div class="Management-Architecture-bx"></div>
+    <div class="Management-Architecture-box" >
+        <div class="Management-Architecture-bx">
+            <div style="height: 40px;"></div>
+            <div class="Management-Architecture-top" id="lian">
+                <h4>管理架构</h4>
+            </div>
+            <div>待开发。。。。。。。</div>
+        </div>
+       
+    </div>
+    
+    <!-- 联系我们 -->
+    <div class="contact-us-box" >
+        <div class="contact-us-bx">
+            <div class="contact-us-top"><h4>联系我们</h4></div>
+            <div style="margin-bottom: 30px;">
+                <iframe width="100%" height="300px" src="./getting-start.html" frameborder="0"></iframe>
+            </div>
+            <div class="contact-us">
+                <div class="contact-us1">
+                       <div>联系电话</div>
+                       <div>400-6602826</div>
+                </div>
+                <div class="contact-us1">
+                    <div>邮箱地址</div>
+                    <div>185627561@qq.com</div>
+             </div>
+             <div class="contact-us1">
+                <div>公司地址</div>
+                <div>上海市青浦区华新镇华隆路1777弄F栋1302室</div>
+            </div>
+            </div>
+            <div class="contact-us-biaodan">
+                <input type="text" placeholder="您的姓名">
+                <input type="text" placeholder="联系方式">
+                <input type="text" placeholder="公司名称">
+            </div>
+            <div class="contact-us-text">
+                <textarea name="" id="" cols="30" rows="10" placeholder="留言内容"></textarea>
+            </div>
+            <div class="contact-us-button">
+                <button>点击提交</button>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="footer-bx">COPYRIGHT ◎2021 版权所有</div>			
+    </div>
+    <div class="posbox">
+        <img src="./images/页面22_03.jpg" alt="">
+        <div style="      text-align: center;
+        line-height: 30px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 25px;">扫一扫进入小程序</div>
     </div>
 </body>
 </html>
